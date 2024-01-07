@@ -37,7 +37,7 @@ The blog site allows users to create, publish, and view blog posts. It includes 
 
 1. Ensure MongoDB is running locally or adjust the database connection accordingly.
 2. Run `npm install` to install dependencies.
-3. Start the server using `node server.js` or `npm start`.
+3. Start the server using `npx nodemon script.js` or `npm start`.
 4. Access the application via `http://localhost:3000` in a web browser.
 
 ## Routes
