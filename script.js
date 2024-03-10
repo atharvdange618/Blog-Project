@@ -13,6 +13,7 @@ const newPostController = require('./controller/newPost.js')
 const aboutController = require('./controller/about.js');
 const contactController = require('./controller/contact.js');
 const homeController = require('./controller/home.js');
+const storeContactController = require('./controller/storeContact.js');
 const getPostController = require('./controller/getPost.js');
 const storePostController = require('./controller/storePost.js');
 const validateMiddleware = require('./middleware/validationMiddleware.js');
@@ -70,6 +71,8 @@ app.get('/post/:id', getPostController)
 app.get('/posts/new', authMiddleware, newPostController)
 
 app.post('/posts/store', authMiddleware, storePostController)
+
+app.post('/contact/store', storeContactController)
 
 app.use('/posts/store', validateMiddleware)
 
