@@ -12,7 +12,6 @@ const flash = require('connect-flash');
 const newPostController = require('./controller/newPost.js')
 const aboutController = require('./controller/about.js');
 const contactController = require('./controller/contact.js');
-const postController = require('./controller/post.js');
 const homeController = require('./controller/home.js');
 const getPostController = require('./controller/getPost.js');
 const storePostController = require('./controller/storePost.js');
@@ -55,8 +54,6 @@ app.use("*", (req, res, next) => {
 app.get('/', homeController)
 
 app.get('/about', aboutController)
-
-app.get('/post', postController)
 
 app.get('/contact', contactController)
 
